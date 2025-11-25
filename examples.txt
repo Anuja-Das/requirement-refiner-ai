@@ -1,0 +1,62 @@
+INVENTORY REPLENISHMENT
+The system should automatically reorder items when stock is low.
+Reorder should happen quickly to avoid stockouts.
+Users want a scalable solution for many SKUs.
+Notifications must be sent soon whenever a reorder fails.
+
+SUPPLIER DELIVERY TRACKING
+We need a dashboard showing supplier delivery performance.
+Data should update fast and reflect the latest shipments.
+The layout should be easy to read for operations teams.
+Provide alerting when deliveries are delayed.
+
+WAREHOUSE PICKING OPTIMIZATION
+Warehouse app must suggest the best picking route.
+It should load fast even with large numbers of orders.
+Pickers want clear instructions and no confusion.
+Updates should happen soon when new orders arrive.
+
+DEMAND FORECASTING
+The system should forecast demand accurately.
+It must handle many products and multiple locations.
+Forecast output should be displayed quickly.
+Users want clear charts and a simple interface.
+
+PURCHASE ORDER MANAGEMENT
+Users need an app to create and track purchase orders.
+The workflow should be fast and easy.
+It must be robust and handle large PO volumes.
+Send notifications when approvals are pending too long.
+
+INVENTORY ACCURACY IMPROVEMENT
+We want a solution that detects discrepancies between system stock and physical stock.
+It should analyze data quickly and highlight suspicious movements.
+The UI must be simple for store associates.
+Provide alerts soon after mismatches are detected.
+
+LOGIN FEATURE
+User wants a fast login process.
+The system should allow quick access for all users.
+It should be highly secure.
+
+DASHBOARD REQUIREMENTS
+Create a dashboard showing sales metrics.
+It should load quickly and handle large data smoothly.
+Provide a clear and user friendly layout.
+Add filters so users can easily refine data.
+
+MOBILE APP NOTIFICATIONS
+App should send notifications soon after an event occurs.
+Users want to receive relevant alerts without delay.
+Notifications should be customizable.
+
+REPORTING MODULE
+Generate weekly performance reports.
+Reports must be robust and scalable.
+Users should be able to export data in multiple formats.
+
+AI CHATBOT REQUIREMENT
+We need a chatbot that can answer customer queries.
+It should respond fast and handle many conversations.
+Bot should understand user intent accurately.
+Allow users to escalate to human agents when needed.
