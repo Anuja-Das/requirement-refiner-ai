@@ -148,4 +148,4 @@ Instead of typing text:
 
 The application already has a pipeline — just wrap it with parsing.
 
---- 
+---
