@@ -20,7 +20,7 @@ It improves requirement quality at the earliest SDLC stage and reduces rework ac
 
 ## System components
 
-![System components](assets/system blueprint.png)
+![System components](assets/system%20blueprint.png)
 
 ---
 
@@ -43,7 +43,7 @@ It improves requirement quality at the earliest SDLC stage and reduces rework ac
 
 ## Data flow process
 
-![Data flow process](assets/data flow process.png)
+![Data flow process](assets/data%20flow%20process.png)
 
 ---
 
