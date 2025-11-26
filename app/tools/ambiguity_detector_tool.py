@@ -21,7 +21,7 @@ def detect_ambiguities(requirement):
     # If input is a list, join elements into a single string
     if isinstance(requirement, list):
         requirement = " ".join(str(x) for x in requirement)
-    # If input is a dict, ocnvert to string using JSON
+    # If input is a dict, convert to string using JSON
     if isinstance(requirement, dict):
         requirement = json.dumps(requirement)
     # Ensure input is a string
