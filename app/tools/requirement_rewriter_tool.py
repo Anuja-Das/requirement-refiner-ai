@@ -3,8 +3,11 @@ Tool: Requirement Rewriter
 Produces a concise, unambiguous, engineering-ready requirement
 """
 
-import json, logging, re
+import json
+import logging
+import re
 from typing import Any
+
 from app.core.llm_adapter import llm
 from app.core.prompts import requirement_rewriter_prompt
 

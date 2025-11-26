@@ -3,9 +3,11 @@ Tool: Missing Information Extractor
 Generates a list of missing details an engineer would need to implement the requirement.
 """
 
+import json
+import logging
+
 from app.core.llm_adapter import llm
 from app.core.prompts import missing_info_extractor_prompt
-import logging, json
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)

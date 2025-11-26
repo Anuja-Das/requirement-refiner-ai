@@ -1,4 +1,5 @@
 import logging
+
 from app.config.llm_config import llm_model, base_url, temperature
 
 logger = logging.getLogger(__name__)

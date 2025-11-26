@@ -3,8 +3,10 @@ Tool: Acceptance Criteria Generator Tool
 Generates acceptance criteria for a given requirement text.
 """
 
+import json
+import logging
 import re
-import logging, json
+
 from app.core.llm_adapter import llm
 from app.core.prompts import acceptance_criteria_gen_prompt
 

@@ -3,9 +3,11 @@ Tool: Ambiguity Detector
 Takes a requirement text and returns a list of ambiguous phrases
 """
 
+import json
+import logging
+
 from app.core.llm_adapter import llm
 from app.core.prompts import ambiguity_detector_prompt
-import logging, json
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
