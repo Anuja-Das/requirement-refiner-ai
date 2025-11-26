@@ -4,8 +4,8 @@ Synchronous pipeline: runs Analyzer -> Refiner and returns final JSON result
 import os.path
 
 from app.agents import analyzer_agent, refiner_agent
-from app.schemas import SynthesizeRequest
-import re, json
+from app.core.schemas import SynthesizeRequest
+import json
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), '..', 'data')
 DATA_DIR = os.path.normpath(DATA_DIR)
@@ -22,11 +22,15 @@ def run_pipeline(req: SynthesizeRequest) -> dict:
     analysis = analyzer_agent.analyze(requirement_text)
 
     # Agent B: Refine
-    final = refiner_agent.refine(requirement_text)
+    final = refiner_agent.refine(
+        requirement_txt=requirement_text,
+        analysis=analysis.model_dump()
+    )
+
 
     # Return a combined result (include analysis and final)
     result = {
-        "analysis": json.loads(analysis.json()),
+        "analysis": json.loads(analysis.model_dump_json()),
         "final_requirement": json.loads(final.json())
     }
     return result

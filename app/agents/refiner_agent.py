@@ -8,7 +8,7 @@ import os, logging, json
 
 from app.tools.requirement_rewriter_tool import rewrite_requirement
 from app.tools.acceptance_criteria_gen_tool import generate_acceptance_criteria
-from app.schemas import FinalRequirement
+from app.core.schemas import FinalRequirement
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -31,7 +31,7 @@ def refine(requirement_txt: str, analysis: dict):
     # Run Requirement Rewriter Tool
     rewritten = rewrite_requirement(requirement_txt,
                                               ambiguities=analysis.get("ambiguous_phrases", []),
-                                              missing_info=analysis.get("missing_information", []))
+                                              missing=analysis.get("missing_information", []))
 
     # Extract refined requirement and notes from the rewritten output
     refined_text = rewritten.get("refined_requirement", requirement_txt)

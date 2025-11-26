@@ -9,7 +9,7 @@ DATA_DIR = os.path.join(BASE_DIR, "data")
 
 INPUT_FILE = os.path.join(DATA_DIR, "requirement_input.txt")
 ANALYSIS_FILE = os.path.join(DATA_DIR, "analysis_output.json")
-FINAL_FILE = os.path.join(DATA_DIR, "refined_requirement_output.json")
+FINAL_FILE = os.path.join(DATA_DIR, "final_requirement_output.json")
 
 
 def load_input():
@@ -35,7 +35,7 @@ def main():
     requirement_text = "\n".join(transcripts)
 
     # Step 1: Analyze the requirements
-    analysis_model = analyze(transcripts)
+    analysis_model = analyze(requirement_text)
 
     # Convert pydantic model to dictionary for JSON serialization
     analysis = analysis_model.model_dump()
@@ -43,7 +43,7 @@ def main():
     save_json(ANALYSIS_FILE, analysis)
 
     # Step 2: Refine the analyzed requirements
-    refined = refine(analysis)
+    refined = refine(requirement_text, analysis)
 
     save_json(FINAL_FILE, refined)
 

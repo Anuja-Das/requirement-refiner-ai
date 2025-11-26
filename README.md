@@ -53,6 +53,7 @@ It improves requirement quality at the earliest SDLC stage and reduces rework ac
 requirement-refiner-ai/
 │
 ├── main.py                             # Run this
+├── requirements.txt
 │
 ├── data/
 │ ├── requirement_input.txt             # INPUT
@@ -60,22 +61,26 @@ requirement-refiner-ai/
 │ └── final_requirement_output.json     # Agent 2 output
 │
 ├── app/
+│ │
 │ ├── agents/
 │ │ ├── analyzer_agent.py
 │ │ ├── refiner_agent.py
+│ │
 │ ├── config/
 │ │ ├── llm_config.py
+│ │
+│ ├── core/
+│ │ ├── llm_adapter.py
+│ │ ├── pipeline.py
+│ │ ├── prompts.py
+│ │ ├── schemas.py
+│ │
 │ ├── tools/
 │ │ ├── acceptance_criteria_gen_tool.py
 │ │ ├── ambiguity_detector_tool.py
 │ │ ├── missing_info_extractor_tool.py
 │ │ └── requirement_rewriter_tool.py
-│
-├── llm_adapter.py
-├── pipeline.py
-├── prompts.py
-├── schemas.py
-├── requirements.txt
+
 </pre>
 
 ---

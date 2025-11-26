@@ -1,0 +1,10 @@
+{
+    "refined_requirement": "The system shall automatically reorder items when the stock level falls below 10% of the maximum allowed quantity. Reordering shall occur within a maximum of 2 hours to avoid stockouts. The solution must be capable of handling at least 1000 SKUs without significant performance degradation. Notifications for failed reorders must be sent within 30 minutes.",
+    "acceptance_criteria": [
+        "The system automatically reorders items when the stock level falls below 10% of the maximum allowed quantity.",
+        "Reordering occurs within a maximum of 2 hours to avoid stockouts.",
+        "The system can handle at least 1000 SKUs without significant performance degradation.",
+        "Notifications for failed reorders are sent within 30 minutes."
+    ],
+    "notes": ""
+}

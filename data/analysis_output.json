@@ -1,0 +1,13 @@
+{
+    "ambiguous_phrases": [
+        "when stock is low",
+        "quickly to avoid stockouts",
+        "soon whenever a reorder fails"
+    ],
+    "missing_information": [
+        "definition_of_low_stock",
+        "threshold_for_quick_reordering",
+        "scalability_requirements",
+        "failure_notification_timeframe"
+    ]
+}

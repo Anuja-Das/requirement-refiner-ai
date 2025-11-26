@@ -3,8 +3,8 @@ Tool: Missing Information Extractor
 Generates a list of missing details an engineer would need to implement the requirement.
 """
 
-from app.llm_adapter import llm
-from app.prompts import missing_info_extractor_prompt
+from app.core.llm_adapter import llm
+from app.core.prompts import missing_info_extractor_prompt
 import logging, json
 
 logging.basicConfig(level=logging.INFO)
