@@ -44,7 +44,6 @@ STRICT INSTRUCTIONS: Return ONLY valid JSON. Do not include any explanations, co
 Return only JSON with:
 {{
   "refined_requirement": "...",
-  "acceptance_criteria": [...],
-  "notes": "..."
+  "acceptance_criteria": [...]
 }}
 """

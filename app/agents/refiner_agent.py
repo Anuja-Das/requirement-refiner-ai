@@ -35,13 +35,8 @@ def refine(requirement_txt: str, analysis: dict):
                                               ambiguities=analysis.get("ambiguous_phrases", []),
                                               missing=analysis.get("missing_information", []))
 
-    # Extract refined requirement and notes from the rewritten output
+    # Extract refined requirement from the rewritten output
     refined_text = rewritten.get("refined_requirement", requirement_txt)
-    notes = rewritten.get("notes", "")
-
-    # Ensure notes is a string, fallback to empty string if None
-    if notes is None:
-        notes = ""
 
     # Run Acceptance Criteria Generator Tool
     acceptance_criteria = generate_acceptance_criteria(refined_text)
@@ -53,8 +48,7 @@ def refine(requirement_txt: str, analysis: dict):
     # Create the final requirement model (as dict for JSON serialization)
     final_requirement = FinalRequirement(
         refined_requirement=refined_text,
-        acceptance_criteria=acceptance_criteria,
-        notes=notes
+        acceptance_criteria=acceptance_criteria
     ).model_dump()
 
     # Save the final requirement to a JSON file

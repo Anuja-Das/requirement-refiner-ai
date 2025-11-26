@@ -18,4 +18,3 @@ class AcceptanceCriteriaItem(BaseModel):
 class FinalRequirement(BaseModel):
     refined_requirement: str
     acceptance_criteria: List[str]
-    notes: Optional[str] = None

@@ -1,3 +1,65 @@
+SIGNUP FEATURE
+New users want to register easily.
+The system should allow signup using email or social accounts.
+It should validate user information and send verification emails.
+
+LOGIN FEATURE
+User wants a fast login process.
+The system should allow quick access for all users.
+It should be highly secure.
+
+PASSWORD RESET
+Users may forget their passwords.
+The system should allow users to reset passwords securely.
+A reset link should be sent via email within 5 minutes.
+
+NOTIFICATIONS
+Users want to stay updated on events.
+The system should send notifications for relevant actions.
+Users can choose email, SMS, or in-app notifications.
+
+SEARCH FUNCTIONALITY
+Users want to find products quickly.
+The system should return relevant results within 2 seconds.
+Filters should be available to narrow down results.
+
+PROFILE MANAGEMENT
+Users want to update personal information.
+The system should allow editing of profile details securely.
+It should validate all inputs and save changes correctly.
+
+FEEDBACK FEATURE
+Users want to give feedback on products.
+The system should allow submission of reviews with ratings.
+Reviews should be displayed publicly after moderation.
+
+LOGOUT FEATURE
+Users want to end their session safely.
+The system should log out users immediately when requested.
+It should clear session data to ensure security.
+
+DASHBOARD REQUIREMENTS
+Create a dashboard showing sales metrics.
+It should load quickly and handle large data smoothly.
+Provide a clear and user friendly layout.
+Add filters so users can easily refine data.
+
+MOBILE APP NOTIFICATIONS
+App should send notifications soon after an event occurs.
+Users want to receive relevant alerts without delay.
+Notifications should be customizable.
+
+REPORTING MODULE
+Generate weekly performance reports.
+Reports must be robust and scalable.
+Users should be able to export data in multiple formats.
+
+AI CHATBOT REQUIREMENT
+We need a chatbot that can answer customer queries.
+It should respond fast and handle many conversations.
+Bot should understand user intent accurately.
+Allow users to escalate to human agents when needed.
+
 INVENTORY REPLENISHMENT
 The system should automatically reorder items when stock is low.
 Reorder should happen quickly to avoid stockouts.
@@ -33,30 +95,3 @@ We want a solution that detects discrepancies between system stock and physical 
 It should analyze data quickly and highlight suspicious movements.
 The UI must be simple for store associates.
 Provide alerts soon after mismatches are detected.
-
-LOGIN FEATURE
-User wants a fast login process.
-The system should allow quick access for all users.
-It should be highly secure.
-
-DASHBOARD REQUIREMENTS
-Create a dashboard showing sales metrics.
-It should load quickly and handle large data smoothly.
-Provide a clear and user friendly layout.
-Add filters so users can easily refine data.
-
-MOBILE APP NOTIFICATIONS
-App should send notifications soon after an event occurs.
-Users want to receive relevant alerts without delay.
-Notifications should be customizable.
-
-REPORTING MODULE
-Generate weekly performance reports.
-Reports must be robust and scalable.
-Users should be able to export data in multiple formats.
-
-AI CHATBOT REQUIREMENT
-We need a chatbot that can answer customer queries.
-It should respond fast and handle many conversations.
-Bot should understand user intent accurately.
-Allow users to escalate to human agents when needed.

@@ -63,7 +63,7 @@ def rewrite_requirement(requirement: str, ambiguities: list = None, missing: lis
             parsed = json.loads(obj_text_clean)
 
             # Keep only known fields
-            allowed_keys = ["refined_requirement", "notes", "acceptance_criteria"]
+            allowed_keys = ["refined_requirement", "acceptance_criteria"]
             clean_dict = {k: parsed.get(k, "") for k in allowed_keys}
 
             logger.info("Agent 2 Tool 1: completed successfully")
@@ -73,14 +73,12 @@ def rewrite_requirement(requirement: str, ambiguities: list = None, missing: lis
             logger.error(f"JSON parsing failed: {e}\nRaw response: {obj_text}")
 
             return {
-                "refined_requirement": requirement,
-                "notes": f"LLM output could not be parsed: {e}"
+                "refined_requirement": requirement
             }
 
     # No JSON found at all
     logger.error(f"No valid JSON object found in LLM response. Raw response: {response}")
 
     return {
-        "refined_requirement": requirement,
-        "notes": "LLM did not return a valid JSON object."
+        "refined_requirement": requirement
     }
