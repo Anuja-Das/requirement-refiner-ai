@@ -100,6 +100,24 @@ requirement-refiner-ai/
 
 ---
 
+## RAG Integration Ideas
+
+### 1. Use Domain Documents
+
+RAG can look up industry-related docs (finance, logistics, healthcare, etc.) to better understand the requirement and generate more accurate results.
+
+### 2. Use Company Policies
+
+Store your internal standards (security rules, UX guidelines, SLAs).
+RAG will fetch them automatically so every requirement follows your company’s rules.
+
+### 3. Use Past Requirements
+
+Save previously refined requirements.
+RAG will retrieve similar ones to keep new requirements consistent and complete.
+
+---
+
 ## Next-step features
 
 ### 1. Domain-Aware Refinement Profiles
@@ -141,23 +159,5 @@ Instead of typing text:
 - Upload PDF, Word, Notion export
 - System extracts text
 - Runs analysis
-
----
-
-## RAG Integration Ideas
-
-### 1. Use Domain Documents
-
-RAG can look up industry-related docs (finance, logistics, healthcare, etc.) to better understand the requirement and generate more accurate results.
-
-### 2. Use Company Policies
-
-Store your internal standards (security rules, UX guidelines, SLAs).
-RAG will fetch them automatically so every requirement follows your company’s rules.
-
-### 3. Use Past Requirements
-
-Save previously refined requirements.
-RAG will retrieve similar ones to keep new requirements consistent and complete.
 
 ---
