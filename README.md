@@ -71,7 +71,6 @@ requirement-refiner-ai/
 │ │
 │ ├── core/
 │ │ ├── llm_adapter.py
-│ │ ├── pipeline.py
 │ │ ├── prompts.py
 │ │ ├── schemas.py
 │ │
@@ -85,27 +84,19 @@ requirement-refiner-ai/
 
 ---
 
-## Input Format
+## Execution steps
 
-Place raw requirement text inside:
-data/requirement_input.txt
+(tested for Python 3.13.9)
 
----
-
-## Run
-
-(tested for Python 3.13.9
-)
-
-1. pip install -r requirements.txt
-2. python main.py
-
----
-
-## Output files
-
-- data/analysis_output.json
-- data/final_requirement_output.json
+1. Place raw requirement text inside:
+   data/requirement_input.txt
+2. Run:  
+   pip install -r requirements.txt
+3. Run:  
+   python main.py
+4. Output files
+   - data/analysis_output.json
+   - data/final_requirement_output.json
 
 ---
 
@@ -150,7 +141,5 @@ Instead of typing text:
 - Upload PDF, Word, Notion export
 - System extracts text
 - Runs analysis
-
-The application already has a pipeline — just wrap it with parsing.
 
 ---

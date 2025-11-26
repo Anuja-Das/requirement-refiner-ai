@@ -1,4 +1,0 @@
-The system should automatically reorder items when stock is low.
-Reorder should happen quickly to avoid stockouts.
-Users want a scalable solution for many SKUs.
-Notifications must be sent soon whenever a reorder fails.
