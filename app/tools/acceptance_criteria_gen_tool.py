@@ -30,7 +30,7 @@ def extract_json_array(text: str) -> str:
         elif text[i] == ']':
             count -= 1
             if count == 0:
-                return text[start:i+1]
+                return text[start:i + 1]
 
     return ""  # No complete array found
 

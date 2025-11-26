@@ -12,6 +12,7 @@ from app.core.prompts import ambiguity_detector_prompt
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+
 # This function detects ambiguous phrases in a requirement text.
 def detect_ambiguities(requirement):
     logger.info("Agent 1 Tool 1: started")

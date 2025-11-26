@@ -20,12 +20,12 @@ DATA_DIR = os.path.normpath(DATA_DIR)
 os.makedirs(DATA_DIR, exist_ok=True)
 ANALYSIS_PATH = os.path.join(DATA_DIR, "analysis_output.json")
 
+
 # Main function for analyzing requirements
 # Accepts a requirement text, runs ambiguity detection and missing info extraction tools,
 # saves the analysis to a JSON file,
 # and returns an AnalyzerOutput model instance.
 def analyze(requirement_text: str) -> AnalyzerOutput:
-
     logger.info("Agent 1: started")
 
     # Run Ambiguity Detector Tool

@@ -12,9 +12,9 @@ from app.core.prompts import missing_info_extractor_prompt
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+
 # This function extracts missing information from a requirement text.
 def extract_missing_info(requirement: str) -> list[str] | None:
-
     logger.info("Agent 1 Tool 2: started")
     prompt = missing_info_extractor_prompt.format(requirement=requirement)
     response = llm.generate(prompt)

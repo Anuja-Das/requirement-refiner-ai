@@ -1,8 +1,10 @@
 # Requirement Refiner AI
 
-Requirement Refiner AI is an **agentic system** that converts raw, messy stakeholder statements into clear, unambiguous, engineering-ready requirements with acceptance criteria.
+Requirement Refiner AI is an **agentic system** that converts raw, messy stakeholder statements into clear, unambiguous,
+engineering-ready requirements with acceptance criteria.
 
-It strengthens requirement quality at the earliest SDLC stage, **preventing costly rework** later and ensuring every engineering, QA, and product deliverable starts on a **solid foundation**.
+It strengthens requirement quality at the earliest SDLC stage, **preventing costly rework** later and ensuring every
+engineering, QA, and product deliverable starts on a **solid foundation**.
 
 ---
 
@@ -78,7 +80,7 @@ requirement-refiner-ai/
 │ │ ├── acceptance_criteria_gen_tool.py
 │ │ ├── ambiguity_detector_tool.py
 │ │ ├── missing_info_extractor_tool.py
-│ │ └── requirement_rewriter_tool.py
+│ │ ├── requirement_rewriter_tool.py
 
 </pre>
 
@@ -95,8 +97,8 @@ requirement-refiner-ai/
 3. Run:  
    python main.py
 4. Output files
-   - data/analysis_output.json
-   - data/final_requirement_output.json
+    - data/analysis_output.json
+    - data/final_requirement_output.json
 
 ---
 
@@ -104,7 +106,8 @@ requirement-refiner-ai/
 
 ### 1. Use Domain Documents
 
-RAG can look up industry-related docs (finance, logistics, healthcare, etc.) to better understand the requirement and generate more accurate results.
+RAG can look up industry-related docs (finance, logistics, healthcare, etc.) to better understand the requirement and
+generate more accurate results.
 
 ### 2. Use Company Policies
 
@@ -123,6 +126,7 @@ RAG will retrieve similar ones to keep new requirements consistent and complete.
 ### 1. Domain-Aware Refinement Profiles
 
 Let the user choose a domain preset, for example:
+
 - Supply Chain
 - E-commerce
 - Healthcare
@@ -134,12 +138,14 @@ Each profile injects domain rules + vocabulary into the refinement process.
 ### 2. Duplicate Requirement Detection
 
 Useful for large requirement docs.
+
 - Detect overlapping or redundant requirements
 - Suggest merging
 
 ### 3. Auto-Generate Test Cases
 
 From the refined requirement + AC:
+
 - Positive test cases
 - Negative test cases
 - Edge cases
@@ -149,6 +155,7 @@ Very powerful for QA teams.
 ### 4. Requirement Change Impact Analyzer
 
 If an input requirement changes, compare:
+
 - What changed?
 - Which ACs need updating?
 - What tests break?
@@ -156,6 +163,7 @@ If an input requirement changes, compare:
 ### 5. Document Upload Support
 
 Instead of typing text:
+
 - Upload PDF, Word, Notion export
 - System extracts text
 - Runs analysis

@@ -32,7 +32,7 @@ def extract_json_block(text: str) -> str:
         elif text[i] == '}':
             brace_count -= 1
             if brace_count == 0:
-                return text[start:i+1]
+                return text[start:i + 1]
 
     return ""  # No complete JSON found
 

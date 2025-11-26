@@ -8,12 +8,15 @@ class SynthesizeRequest(BaseModel):
     constraints: Optional[str] = ""
     backlog: Optional[str] = ""
 
+
 class AnalyzerOutput(BaseModel):
     ambiguous_phrases: List[str] = Field(default_factory=list)
     missing_information: List[str] = Field(default_factory=list)
 
+
 class AcceptanceCriteriaItem(BaseModel):
     criterion: str
+
 
 class FinalRequirement(BaseModel):
     refined_requirement: str

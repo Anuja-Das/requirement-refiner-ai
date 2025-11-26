@@ -52,11 +52,9 @@ def main():
     print(f" - {ANALYSIS_FILE}")
     print(f" - {FINAL_FILE}")
 
-
     duration = (time.time() - start_time) / 60
     print(f"\nTotal execution time: {duration:.2f} minutes")
 
 
 if __name__ == "__main__":
     main()
-

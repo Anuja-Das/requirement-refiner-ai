@@ -30,7 +30,6 @@ class LLMAdapter:
             logger.info("Langchain Ollama not available; cannot create ChatOllama client")
             self._client = None
 
-
     def generate(self, prompt: str) -> str:
         if LC_AVAILABLE and isinstance(self._client, ChatOllama):
 

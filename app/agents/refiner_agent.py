@@ -32,8 +32,8 @@ def refine(requirement_txt: str, analysis: dict):
 
     # Run Requirement Rewriter Tool
     rewritten = rewrite_requirement(requirement_txt,
-                                              ambiguities=analysis.get("ambiguous_phrases", []),
-                                              missing=analysis.get("missing_information", []))
+                                    ambiguities=analysis.get("ambiguous_phrases", []),
+                                    missing=analysis.get("missing_information", []))
 
     # Extract refined requirement from the rewritten output
     refined_text = rewritten.get("refined_requirement", requirement_txt)
