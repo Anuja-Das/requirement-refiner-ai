@@ -25,21 +25,21 @@ engineering, QA, and product deliverable starts on a **solid foundation**.
 
 ## Tools and Technologies used
 
-1. Large Language Models & Embeddings
+1. Programming Language
+    - Python 3.13.9 - Core language for all agents, RAG pipeline, and orchestration
+2. Large Language Models & Embeddings
     - LLaMA 3.1 (via Ollama) – LLM used for analysis and refinement
     - Nomic Embed Text – Embedding model for RAG vector search
-2. LLM Orchestration & Frameworks
+3. LLM Orchestration & Frameworks
     - LangChain – High-level orchestration framework
     - LangChain Core – Core abstractions for prompts, messages, runnables
     - LangChain Ollama – Integration layer for using Ollama models inside LangChain
-3. Local Model Server
+4. Local Model Server
     - Ollama – Local inference engine for running LLaMA and embedding models
-4. Vector Database & RAG
+5. Vector Database & RAG
     - ChromaDB – Vector store used for Retrieval-Augmented Generation (RAG)
-5. AI Utility Libraries
+6. AI Utility Libraries
     - Nomic – API used to generate embeddings for RAG
-6. Core Python Libraries
-    - Pydantic – Data validation and structured JSON schema
 
 ---
 
