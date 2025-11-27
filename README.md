@@ -120,12 +120,10 @@ requirement-refiner-ai/
 
 (tested for Python 3.13.9)
 
-1. Run:  
-   pip install -r requirements.txt
-2. Place raw requirement text inside:  
-   `data/requirement_input.txt`
-3. Run:  
-   python main.py
+1. Run: `pip install -r requirements.txt`
+2. Place raw requirement text inside: `data/requirement_input.txt`
+3. Add knowledge base text (if any) inside: `app/rag/kb/knowledge_base.txt`
+3. Run: `python main.py`
 4. Output files
     - `data/analysis_output.json`
     - `data/final_requirement_output.json`
