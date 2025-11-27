@@ -1,0 +1,4 @@
+Passwords must be hashed using approved algorithms such as Argon2, bcrypt, or PBKDF2.
+Never store plaintext passwords.
+Enforce a minimum length of 8 characters, including alphanumeric and special characters.
+Require MFA for sensitive operations.

@@ -41,7 +41,7 @@ It should clear session data to ensure security.
 DASHBOARD REQUIREMENTS
 Create a dashboard showing sales metrics.
 It should load quickly and handle large data smoothly.
-Provide a clear and user friendly layout.
+Provide a clear and user-friendly layout.
 Add filters so users can easily refine data.
 
 MOBILE APP NOTIFICATIONS

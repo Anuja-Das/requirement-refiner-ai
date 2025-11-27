@@ -1,5 +1,7 @@
 /.idea
+/.venv
 /shelf/
 /data/requirement_input.txt
 /data/analysis_output.json
 /data/final_requirement_output.json
+/app/rag/chroma_db

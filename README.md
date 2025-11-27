@@ -1,6 +1,7 @@
 # Requirement Refiner AI
 
-Requirement Refiner AI is an **agentic system** that converts raw, messy stakeholder statements into clear, unambiguous,
+Requirement Refiner AI is an **agentic system** wih **RAG** that converts raw, messy stakeholder statements into clear,
+unambiguous,
 engineering-ready requirements with acceptance criteria.
 
 It strengthens requirement quality at the earliest SDLC stage, **preventing costly rework** later and ensuring every
@@ -12,6 +13,8 @@ engineering, QA, and product deliverable starts on a **solid foundation**.
 
 - Detects ambiguous terms and unclear language
 - Identifies missing details or incomplete logic
+- Leverages **RAG (Retrieval-Augmented Generation)** to pull relevant knowledge from the domain knowledge base and
+  enrich requirements
 - Rewrites the requirement into final engineering format
 - Generates testable acceptance criteria
 - Produces two JSON outputs:
@@ -76,6 +79,12 @@ requirement-refiner-ai/
 │ │ ├── prompts.py
 │ │ ├── schemas.py
 │ │
+│ ├── rag/
+│ │ ├── chroma_db/                      # Auto-generated
+│ │ ├── kb/
+│ │ │ ├── knowledge_base.txt
+│ │ ├── rag_loader.py
+│ │
 │ ├── tools/
 │ │ ├── acceptance_criteria_gen_tool.py
 │ │ ├── ambiguity_detector_tool.py
@@ -90,15 +99,15 @@ requirement-refiner-ai/
 
 (tested for Python 3.13.9)
 
-1. Place raw requirement text inside:
-   data/requirement_input.txt
-2. Run:  
+1. Run:  
    pip install -r requirements.txt
+2. Place raw requirement text inside:  
+   `data/requirement_input.txt`
 3. Run:  
    python main.py
 4. Output files
-    - data/analysis_output.json
-    - data/final_requirement_output.json
+    - `data/analysis_output.json`
+    - `data/final_requirement_output.json`
 
 ---
 

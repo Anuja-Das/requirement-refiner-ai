@@ -4,6 +4,7 @@ import time
 
 from app.agents.analyzer_agent import analyze
 from app.agents.refiner_agent import refine
+from app.rag.rag_loader import retrieve_context
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(BASE_DIR, "data")
@@ -35,6 +36,12 @@ def main():
     transcripts = load_input()
     requirement_text = "\n".join(transcripts)
 
+    # RAG retrieval (simple + safe)
+    try:
+        rag_context = retrieve_context(requirement_text)
+    except Exception:
+        rag_context = ""
+
     # Step 1: Analyze the requirements
     analysis_model = analyze(requirement_text)
 
@@ -44,7 +51,7 @@ def main():
     save_json(ANALYSIS_FILE, analysis)
 
     # Step 2: Refine the analyzed requirements
-    refined = refine(requirement_text, analysis)
+    refined = refine(requirement_text, analysis, rag_context)
 
     save_json(FINAL_FILE, refined)
 

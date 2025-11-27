@@ -27,11 +27,17 @@ FINAL_PATH = os.path.join(DATA_DIR, "final_requirement_output.json")
 # 2. Runs Acceptance Criteria Generator Tool to generate acceptance criteria
 # 3. Saves the final refined requirement to a JSON file
 # 4. Returns a FinalRequirement model instance
-def refine(requirement_txt: str, analysis: dict):
+def refine(requirement_txt: str, analysis: dict, rag_context: str = ""):
     logger.info("Agent 2: started")
 
+    # Merge RAG knowledge if provided
+    enriched_requirement = requirement_txt
+    if rag_context and rag_context.strip():
+        enriched_requirement += f"\n\n# Additional Context from Knowledge Base:\n{rag_context}"
+        enriched_requirement += "INSTRUCTION: Use the knowledge above to fill in any placeholders in the requirement and make it fully concrete."
+
     # Run Requirement Rewriter Tool
-    rewritten = rewrite_requirement(requirement_txt,
+    rewritten = rewrite_requirement(enriched_requirement,
                                     ambiguities=analysis.get("ambiguous_phrases", []),
                                     missing=analysis.get("missing_information", []))
 
