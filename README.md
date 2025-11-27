@@ -1,6 +1,6 @@
 # Requirement Refiner AI
 
-Requirement Refiner AI is an **agentic system** wih **RAG** that converts raw, messy stakeholder statements into clear,
+Requirement Refiner AI is an **Agentic system** wih **RAG** that converts raw, messy stakeholder statements into clear,
 unambiguous,
 engineering-ready requirements with acceptance criteria.
 
@@ -58,6 +58,7 @@ engineering, QA, and product deliverable starts on a **solid foundation**.
     - Outputs an analysis report in JSON format.
     - Saves to `analysis_output.json`.
 3. **Agent 2 - Requirement Refiner**:
+    - Uses RAG-enriched Knowledge Base context to refine and correct the requirement.
     - Takes the analysis report and original requirement.
     - Rewrites the requirement into a clear, unambiguous format.
     - Generates acceptance criteria.
