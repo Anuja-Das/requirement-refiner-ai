@@ -21,7 +21,7 @@ def build_chroma_index():
     """
 
     if not os.path.exists(KB_DIR):
-        print(f"⚠️ KB folder not found at: {KB_DIR}")
+        print(f"KB folder not found at: {KB_DIR}")
         return
 
     docs = []
@@ -38,7 +38,7 @@ def build_chroma_index():
     print(f"Loaded {len(docs)} KB documents.")
 
     if not docs:
-        print("⚠️ No KB text files found. Skipping index build.")
+        print("No KB text files found. Skipping index build.")
         return
 
     # Generate embeddings (same model, same API)
@@ -61,7 +61,7 @@ def retrieve_context(query: str, top_k: int = 2):
 
     # Ensure DB is initialized at least once
     if not os.listdir(CHROMA_DB_DIR):
-        print("ℹ️ Chroma DB empty — building index first...")
+        print("Chroma DB empty — building index first...")
         build_chroma_index()
 
     # Embed query (same)
